@@ -1,0 +1,28 @@
+{
+    "name": "jingbh/ncmrank",
+    "description": "The NCMRank package of JingBh Websites.",
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.4",
+        "voku/simple_html_dom": "^4.4"
+    },
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "JingBh",
+            "email": "jingbohao@yeah.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JingBh\\NCMRank\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JingBh\\NCMRank\\NCMRankServiceProvider"
+            ]
+        }
+    }
+}

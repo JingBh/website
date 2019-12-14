@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ComposerJsonPluginSettings">
     <unboundedVersionInspectionSettings>
-      <excludedPackages />
+      <excludedPackages>
+        <pattern pattern="roave/security-advisories" />
+        <pattern pattern="jingbh/*" />
+      </excludedPackages>
     </unboundedVersionInspectionSettings>
-    <customRepositories />
+    <customRepositories>
+      <file path="$PROJECT_DIR$/composer.json" enabled="true" />
+    </customRepositories>
     <composerUpdateOptions />
   </component>
 </project>

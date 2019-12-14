@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="row form-row justify-content-center text-center load-hidden" id="introButtons">
-        <div class="col-12 col-sm-auto mt-3">
+        <!--<div class="col-12 col-sm-auto mt-3">
             <div class="btn-group">
                 <a class="btn btn-teal" href="/message" target="_blank" title="留言" data-toggle="tooltip"><i class="fal fa-comment-dots"></i> Leave a Message</a>
                 <button class="btn btn-teal dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><span class="sr-only">Toggle Dropdown</span></button>
@@ -40,7 +40,7 @@
                     <a class="dropdown-item" href="mailto:jingbohao@yeah.net" target="_blank"><i class="fal fa-envelope"></i> 电子邮件</a>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="col-12 col-sm-auto mt-3">
             <button class="btn btn-indigo" data-toggle="modal" data-target="#sponsorModal"><i class="fal fa-donate"></i> Sponsor Me</button>
         </div>
