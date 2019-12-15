@@ -37,7 +37,7 @@ function loadData(uid) {
         $("#loading").css("opacity", 0);
         $(".data-user").removeAttr("disabled");
     } else {
-        $.get("/ncm_rank/data/" + uid, function(data) {
+        $.get((_localizedDataUrl || "/ncm_rank/data") + "/" + uid, function(data) {
             _cache[uid] = data;
             loadData(uid);
         });

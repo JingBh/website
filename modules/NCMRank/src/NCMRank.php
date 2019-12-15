@@ -2,6 +2,7 @@
 namespace JingBh\NCMRank;
 
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\App;
 
 class NCMRank
 {
@@ -137,5 +138,17 @@ class NCMRank
         if (is_float($remain_days))
             $remain_days = round($remain_days, $digits);
         return [$average, $remain_days];
+    }
+
+    /**
+     * 创建Carbon实例并本地化
+     *
+     * @param Carbon|string|null $time
+     * @return Carbon
+     */
+    public static function localizedCarbon($time=null) {
+        $carbon = is_a($time, Carbon::class)
+            ? $time : Carbon::parse($time);
+        return $carbon->locale(App::getLocale());
     }
 }

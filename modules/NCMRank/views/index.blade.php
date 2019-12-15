@@ -23,6 +23,7 @@
         const _charts = {
             "chart": null
         };
+        const _localizedDataUrl = '{{ LaravelLocalization::localizeUrl('/ncm_rank/data') }}';
     </script>
     <title>NCMRank by JingBh</title>
 </head>

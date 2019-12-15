@@ -7,11 +7,13 @@
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.4",
+        "jingbh/ncmrank": "*",
         "laravel/framework": "^6.6",
         "laravel/passport": "^8.0",
         "laravel/tinker": "^2.0",
+        "mcamara/laravel-localization": "^1.4",
         "overtrue/laravel-lang": "~3.0",
-        "jingbh/ncmrank": "*"
+        "toplan/laravel-sms": "^2.6"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

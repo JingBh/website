@@ -25,7 +25,7 @@ class NCMRecord extends Model
      * @return string
      */
     public function getUpdatedAtAttribute($value) {
-        $date = self::localizedCarbon($value);
+        $date = NCMRank::localizedCarbon($value);
         return $date->isoFormat("LL LTS");
     }
 
@@ -35,7 +35,7 @@ class NCMRecord extends Model
      * @return string
      */
     public function getDayAttribute() {
-        $date = self::localizedCarbon($this->date);
+        $date = NCMRank::localizedCarbon($this->date);
         return $date->isoFormat("MMMDo");
     }
 
@@ -45,19 +45,7 @@ class NCMRecord extends Model
      * @return string
      */
     public function getWeekAttribute() {
-        $date = self::localizedCarbon($this->date);
+        $date = NCMRank::localizedCarbon($this->date);
         return $date->isoFormat("YY年第w周");
-    }
-
-    /**
-     * 创建Carbon实例并本地化
-     *
-     * @param Carbon|string|null $time
-     * @return Carbon
-     */
-    protected static function localizedCarbon($time=null) {
-        $carbon = is_a($time, Carbon::class)
-            ? $time : Carbon::parse($time);
-        return $carbon->locale(config("app.locale"));
     }
 }

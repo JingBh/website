@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('home');
 });
+
+/**
+ * Routes of NCMRank
+ */
+Route::group([
+    "prefix" => LaravelLocalization::setLocale(),
+    "middleware" => ["localeSessionRedirect", "localizationRedirect"],
+    "name" => "ncmrank.",
+    "namespace" => "\JingBh\NCMRank"
+], function() {
+    Route::get('/ncm_rank/data/{user}', 'NCMRankController@data');
+    Route::get('/ncm_rank', 'NCMRankController@index');
+});
