@@ -172,10 +172,10 @@
                 </div>
                 <p class="mywork-intro"><span class="badge badge-primary">开源</span> 统计我和同学们的考试成绩</p>
                 <div class="mywork-content">
-                    <p>查询考试成绩，智能计算总分、排名、进步情况，为我和我的同学们提供方便。<br>
+                    <p class="mb-0">查询考试成绩，智能计算总分、排名、进步情况，为我和我的同学们提供方便。<br>
                        初中毕业后，ScoreDB v1不再使用。为了继续方便高中的学习生活，使用全新架构、功能更加丰富的<strong>ScoreDB v2</strong><del>正在开发中</del>。<br>
-                        <span class="text-danger">由于获取数据的行为违反相关规定，ScoreDB不再开放和继续开发。</span></p>
-                    <a class="btn btn-secondary mt-2" href="https://github.com/JingBh/ScoreDB" target="_blank"><i class="fab fa-github"></i> 代码仓库</a>
+                        <span class="text-danger">由于获取数据的行为违反相关规定，ScoreDB不再开放和继续开发。</span>
+                    </p>
                 </div>
             </div>
             <div class="mywork" style="background:linear-gradient(to left, #ef3b36, #ffffff);">
