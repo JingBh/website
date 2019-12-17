@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:33060/</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Web Server" uuid="a0c91d3d-49c2-4111-99b7-2aa4eb62dc49">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://jingbh.top:3306/laravel</jdbc-url>
+    </data-source>
   </component>
 </project>
