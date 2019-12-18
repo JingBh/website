@@ -2,7 +2,7 @@ const mix = require('laravel-mix');
 
 mix.disableNotifications();
 mix.extract(["lodash", "axios"]);
-if (mix.inProduction()) mix.version();
+mix.version();
 
 /*
  |--------------------------------------------------------------------------

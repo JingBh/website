@@ -196,12 +196,18 @@
 </div>
 <div class="container-fluid p-0 mt-3" id="footer">
     <footer class="text-dark p-5">
-        <h5>本站由JingBh设计制作，版权所有 &copy; JingBh 2018-2019，保留所有权利。<br></h5>
-        <hr>
+        <h5>本站由JingBh设计制作，版权所有 &copy; JingBh 2018-2019，保留所有权利。</h5>
+        <!--<hr>
         <h5>友情链接</h5>
-        <small class="mb-1">
+        <p class="small">
             <a class="text-dark" href="https://www.zhc7.top/" target="_blank" rel="noreferrer">ZHC</a>
-        </small>
+        </p>-->
+        <div class="load-hidden" id="myLove">
+            <hr>
+            <span class="d-none">Tsuki</span>
+            <p class="mb-0"><em>If you are my <strong>moonlight</strong>.</em></p>
+            <span class="d-none">"All are only I cling to you."</span>
+        </div>
     </footer>
 </div>
 <div class="modal fade" id="sponsorModal" tabindex="-1" role="dialog">

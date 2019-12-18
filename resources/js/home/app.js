@@ -67,19 +67,15 @@ $(function() {
                     origin: "left",
                     distance: "50px"
                 });
-                /* ScrollReveal().reveal(".mywork", {
-                    reset: true,
-                    distance: "50px",
-                    origin: "left",
-                    interval: 100,
-                    beforeReveal: function(el) {
-                        $(el).addClass("mywork-opened");
-                    }
-                }); */
             }, 600);
         }, 200);
-        ScrollReveal().reveal(".ads");
     }, 1000);
+    ScrollReveal().reveal("#myLove", {
+        origin: "right",
+        distance: "100px",
+        duration: 1000
+    });
+
     $(".mywork .mywork-flex").click(function() {
         const p = $(this).parents(".mywork");
         if (p.hasClass("mywork-open")) {
