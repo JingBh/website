@@ -307,7 +307,7 @@ return [
     // again if the session expires.
     //
     // If false, system will take app.php locale attribute
-    'useAcceptLanguageHeader' => true,
+    'useAcceptLanguageHeader' => false,
 
     // If `hideDefaultLocaleInURL` is true, then a url without locale
     // is identical with the same url with default locale.
@@ -332,7 +332,7 @@ return [
     'localesOrder' => ['zh_CN', 'en'],
 
     //  If you want to use custom lang url segments like 'at' instead of 'de-AT', you can use the mapping to tallow the LanguageNegotiator to assign the descired locales based on HTTP Accept Language Header. For example you want ot use 'at', so map HTTP Accept Language Header 'de-AT' to 'at' (['de-AT' => 'at']).
-    'localesMapping' => ['zh_CN' => 'zh'],
+    'localesMapping' => [],
 
     // Locale suffix for LC_TIME and LC_MONETARY
     // Defaults to most common ".UTF-8". Set to blank on Windows systems, change to ".utf8" on CentOS and similar.
