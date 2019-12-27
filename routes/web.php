@@ -29,3 +29,16 @@ Route::group([
     Route::get('/ncm_rank/data/{user}', 'NCMRankController@data');
     Route::get('/ncm_rank', 'NCMRankController@index');
 });
+
+/**
+ * Routes of AutoZP
+ */
+Route::group([
+    "prefix" => "autozp",
+    "middleware" => ["autozp"],
+    "name" => "autozp.",
+    "namespace" => "\JingBh\AutoZP\Http\Controllers"
+], function() {
+    // Load AutoZP routes from its source.
+    include __DIR__ . "/../modules/AutoZP/src/Http/routes.php";
+});

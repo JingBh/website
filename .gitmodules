@@ -1,0 +1,3 @@
+[submodule "autozp"]
+path = modules/AutoZP
+	url = git@github.com:JingBh/websites-AutoZP.git

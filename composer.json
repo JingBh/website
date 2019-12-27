@@ -8,6 +8,7 @@
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.4",
         "jingbh/ncmrank": "*",
+        "jingbh/autozp": "*",
         "laravel/framework": "^6.6",
         "laravel/passport": "^8.0",
         "laravel/tinker": "^2.0",
@@ -66,6 +67,13 @@
         {
             "type": "path",
             "url": "modules/NCMRank",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "modules/AutoZP",
             "options": {
                 "symlink": true
             }

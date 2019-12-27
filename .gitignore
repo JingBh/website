@@ -1,3 +1,4 @@
+# Project and Laravel
 **/node_modules
 **/public/css
 **/public/js
@@ -22,3 +23,6 @@
 /mysql_backup
 /postgres_backup
 /user-customizations.sh
+
+# Submodules
+/modules/AutoZP
