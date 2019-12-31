@@ -23,7 +23,7 @@ Auth::routes();
 Route::group([
     "prefix" => LaravelLocalization::setLocale(),
     "middleware" => ["localeSessionRedirect", "localizationRedirect"],
-    "name" => "ncmrank.",
+    "as" => "ncmrank.",
     "namespace" => "\JingBh\NCMRank"
 ], function() {
     Route::get('/ncm_rank/data/{user}', 'NCMRankController@data');
@@ -36,9 +36,9 @@ Route::group([
 Route::group([
     "prefix" => "autozp",
     "middleware" => ["autozp"],
-    "name" => "autozp.",
+    "as" => "autozp.",
     "namespace" => "\JingBh\AutoZP\Http\Controllers"
-], function() {
+], function($router) {
     // Load AutoZP routes from its source.
     include __DIR__ . "/../modules/AutoZP/src/Http/routes.php";
 });
