@@ -195,8 +195,8 @@
     </div>
 </div>
 <div class="container-fluid p-0 mt-3" id="footer">
-    <footer class="text-dark p-5">
-        <h5>本站由JingBh设计制作，版权所有 &copy; JingBh 2018-2019，保留所有权利。</h5>
+    <footer class="text-dark p-5" style="overflow-x: hidden;">
+        <h5>本站由JingBh设计制作，版权所有 &copy; JingBh 2018-2020，保留所有权利。</h5>
         <!--<hr>
         <h5>友情链接</h5>
         <p class="small">
