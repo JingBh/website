@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /autozp
+Disallow: /autozp/
+Disallow: /ncm_rank
+Disallow: /ncm_rank/
