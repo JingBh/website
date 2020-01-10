@@ -25,5 +25,8 @@
         "sass-loader": "^7.1.0",
         "scrollreveal": "^4.0",
         "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "datatables.net-responsive-bs4": "^2.2.3"
     }
 }
