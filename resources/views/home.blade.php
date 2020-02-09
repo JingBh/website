@@ -169,10 +169,12 @@
                     <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
                     <img class="mywork-logo" src="https://storage.jingbh.top/autozp/logo.gif" alt="AutoZP Logo" title="AutoZP">
                 </div>
-                <p class="mywork-intro">一个<span class="font-weight-light mx-1">极简</span>综评客户端</p>
+                <p class="mywork-intro">
+                    <span class="badge badge-success">PWA</span>
+                    一个<span class="font-weight-light mx-1">极简</span>综评客户端
+                </p>
                 <div class="mywork-content">
-                    <p>综评系统的简化版客户端，同时也包含一些高级功能。</p>
-                    <p class="mb-0"><strong>目前为邀请制，不开放使用。</strong></p>
+                    <p class="mb-0">综评系统的简化版客户端，同时也包含一些独家高级功能。</p>
                 </div>
             </div>
             <div class="mywork" style="background:linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);">
@@ -181,11 +183,14 @@
                     <img class="mywork-logo" src="https://storage.jingbh.top/scoredb/logo1000sq.png/Logo128" alt="ScoreDB Logo">
                     <h3 class="mywork-title">ScoreDB</h3>
                 </div>
-                <p class="mywork-intro"><span class="badge badge-primary">开源</span> 统计我和同学们的考试成绩</p>
+                <p class="mywork-intro">
+                    <span class="badge badge-primary">开源</span>
+                    统计我和同学们的考试成绩
+                </p>
                 <div class="mywork-content">
                     <p>
                         查询考试成绩，智能计算总分、排名、进步情况，为我和我的同学们提供方便。<br>
-                        初中毕业后，ScoreDB v1不再使用。为了继续方便高中的学习生活，使用全新架构、功能更加丰富的<strong>ScoreDB v2</strong><del>正在开发中</del>。
+                        初中毕业后，ScoreDB v1不再使用。为了继续方便高中的学习生活，<strong>ScoreDB v2</strong>使用全新架构，功能更加丰富。
                     </p>
                     <p class="mb-0 text-danger">由于获取数据的行为违反相关规定，ScoreDB不再开放和继续开发。</p>
                 </div>
@@ -195,10 +200,13 @@
                     <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
                     <h3 class="mywork-title">NCMRank</h3>
                 </div>
-                <p class="mywork-intro"><span class="badge badge-secondary">私用</span> 统计网易云音乐听歌量</p>
+                <p class="mywork-intro">
+                    <span class="badge badge-primary">开源</span>
+                    <span class="badge badge-secondary">私用</span>
+                    统计网易云音乐听歌量
+                </p>
                 <div class="mywork-content">
-                    <p>一个用来统计我自己在网易云音乐每天听歌数目和升级进度的小工具，不对其他用户开放。</p>
-                    <a class="btn btn-primary mt-2" href="/ncm_rank" target="_blank">参观一下</a>
+                    <p class="mb-0">一个用来统计我自己在网易云音乐每天听歌数目和升级进度的小工具，不对其他用户开放。</p>
                 </div>
             </div>
             <p class="mb-0 lead"><strong>还有很多很多......</strong></p>

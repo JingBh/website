@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command("ncmrank:update")->hourlyAt(1);
+        // $schedule->command("ncmrank:update")->hourlyAt(1);
     }
 
     /**

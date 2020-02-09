@@ -20,7 +20,7 @@ Auth::routes();
 /**
  * Routes of NCMRank
  */
-Route::group([
+/*Route::group([
     "prefix" => LaravelLocalization::setLocale(),
     "middleware" => ["localeSessionRedirect", "localizationRedirect"],
     "as" => "ncmrank.",
@@ -28,7 +28,7 @@ Route::group([
 ], function() {
     Route::get('/ncm_rank/data/{user}', 'NCMRankController@data');
     Route::get('/ncm_rank', 'NCMRankController@index');
-});
+});*/
 
 /**
  * Routes of AutoZP
