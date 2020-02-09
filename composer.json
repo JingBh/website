@@ -11,7 +11,6 @@
         "laravel/framework": "^6.6",
         "laravel/passport": "^8.0",
         "laravel/tinker": "^2.0",
-        "mcamara/laravel-localization": "^1.4",
         "overtrue/laravel-lang": "~3.0",
         "toplan/laravel-sms": "^2.6"
     },
