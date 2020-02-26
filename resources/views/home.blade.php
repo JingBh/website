@@ -22,13 +22,13 @@
     <h1 class="mt-3 font-weight-light">JingBh</h1>
     <i class="fal fa-mars" style="color:lightskyblue;" title="Male"></i>
     <span class="text-muted mx-1">/</span>
-    <span>15 Years Old</span><br>
+    <span>16 Years Old</span><br>
     <small><i class="fal fa-map-marker-alt text-orange" title="Position"></i> 北京市 海淀区</small>
 </div>
 <div class="container load-hidden" id="introContainer">
     <div class="row justify-content-center">
         <div class="col-md-9 col-lg-6">
-            <p>我叫JingBh，是一名高一学生。我从小就对电子设备非常感兴趣，现在热衷于研究网络，业余时间喜欢写程序、写网页。您现在看到的这个网站以及下面列出的所有项目都由我自己编写。</p>
+            <p>我叫JingBh，是一名高一学生。我从小就对电子设备非常感兴趣，现在热衷于研究网络，业余时间喜欢写程序、写网页。您现在看到的这个网站以及下面列出的所有项目都由我自己编写。这是我的个人主页<small class="text-secondary">v4</small>。</p>
         </div>
     </div>
     <div class="row form-row justify-content-center text-center load-hidden" id="introButtons">
@@ -171,6 +171,7 @@
                 </div>
                 <p class="mywork-intro">
                     <span class="badge badge-success">PWA</span>
+                    <span class="badge badge-secondary">未完成</span>
                     一个<span class="font-weight-light mx-1">极简</span>综评客户端
                 </p>
                 <div class="mywork-content">
@@ -184,7 +185,7 @@
                     <h3 class="mywork-title">ScoreDB</h3>
                 </div>
                 <p class="mywork-intro">
-                    <span class="badge badge-primary">开源</span>
+                    <span class="badge badge-primary"><del>开源</del></span>
                     统计我和同学们的考试成绩
                 </p>
                 <div class="mywork-content">
