@@ -1,0 +1,29 @@
+{
+    "name": "jingbh/autozp",
+    "description": "The AutoZP package of JingBh Websites.",
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "guzzlehttp/guzzle": "^6.4"
+    },
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "JingBh",
+            "email": "jingbohao@yeah.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JingBh\\AutoZP\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JingBh\\AutoZP\\AutoZPServiceProvider"
+            ]
+        }
+    }
+}

@@ -18,3 +18,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::any("anything", "AnythingController@upload");
+
+/**
+ * Routes of AutoZP
+ */
+Route::group([
+    "prefix" => "autozp",
+    "middleware" => ["autozp"],
+    "as" => "autozp.",
+    "namespace" => "\JingBh\AutoZP\Http\Controllers"
+], function() {
+    // Load AutoZP routes from its source.
+    include __DIR__ . "/../modules/AutoZP/src/Http/routes.php";
+});

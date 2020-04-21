@@ -23,6 +23,3 @@
 /mysql_backup
 /postgres_backup
 /user-customizations.sh
-
-# Submodules
-/modules/AutoZP
