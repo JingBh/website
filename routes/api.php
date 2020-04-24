@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,7 @@ Route::any("anything", "AnythingController@upload");
 /**
  * Routes of AutoZP
  */
+/*
 Route::group([
     "prefix" => "autozp",
     "middleware" => ["autozp"],
@@ -31,3 +33,4 @@ Route::group([
     // Load AutoZP routes from its source.
     include __DIR__ . "/../modules/AutoZP/src/Http/routes.php";
 });
+ */
