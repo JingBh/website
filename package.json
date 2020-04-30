@@ -16,7 +16,7 @@
         "datatables.net": "^1.10.20",
         "datatables.net-bs4": "^1.10",
         "datatables.net-fixedheader-bs4": "^3.1",
-        "jquery": "^3.2",
+        "jquery": "^3.5",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17",
         "popper.js": "^1.12",
