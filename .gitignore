@@ -1,25 +1,2 @@
-# Project and Laravel
-**/node_modules
-**/public/css
-**/public/js
-**/public/hot
-**/public/storage
-**/mix-manifest.json
-**/storage/*.key
-**/vendor
-**/.env
-**/.env.backup
-**/.phpunit.result.cache
-**/npm-debug.log
-**/yarn-error.log
-
-# Homestead
-/.vagrant
-/Homestead.yaml
-/Homestead.json
-/after.sh
-/aliases
-/mysqldump.sql.gz
-/mysql_backup
-/postgres_backup
-/user-customizations.sh
+# IDE
+.idea
