@@ -1,5 +1,3 @@
-import "../sass/app.scss";
-
 window.$ = window.jQuery = require('jquery');
 
 require('bootstrap');
@@ -84,9 +82,9 @@ window.setTimeout(() => {
 
 }, 1000)
 
-$(".mywork .mywork-flex").on("click", () => {
-    const p = $(this).parents(".mywork");
-    const works = $(p, ".mywork-content");
+$(".mywork .mywork-flex").on("click", (event) => {
+    const p = $(event.currentTarget).parents(".mywork");
+    const works = p.find(".mywork-content");
     if (p.hasClass("mywork-open")) {
         p.removeClass("mywork-open");
         works.stop().slideUp(300);

@@ -6,7 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './resources/js/app.js',
+    entry: ['./resources/js/app.js', './resources/sass/app.scss'],
     output: {
         filename: 'js/bundle.[hash].js',
         path: path.resolve(__dirname, 'dist')
@@ -14,8 +14,6 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: "css/[name].[hash].css",
             chunkFilename: "css/[id].css"
         }),
@@ -32,6 +30,18 @@ module.exports = {
             {
                 test: /\.(html)$/,
                 use: 'html-loader'
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            [ "@babel/env", { useBuiltIns: "usage" } ]
+                        ]
+                    }
+                }
             },
             {
                 test: /\.scss$/,
