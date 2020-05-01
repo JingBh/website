@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack --config webpack.dev.js",
-    "prod": "webpack --config webpack.common.js"
+    "prod": "webpack --config webpack.common.js",
+    "deploy": "ossutil --config-file .ossrc rm oss://jingbh-websites/ -ra && ossutil --config-file .ossrc cp ./dist oss://jingbh-websites -rf"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.36",
