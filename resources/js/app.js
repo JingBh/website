@@ -1,3 +1,5 @@
+require("./redirect");
+
 window.$ = window.jQuery = require('jquery');
 
 require('bootstrap');
