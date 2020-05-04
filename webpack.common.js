@@ -22,7 +22,7 @@ module.exports = {
             filename: 'index.html'
         }),
         new CopyPlugin([
-            { from: 'public/**/*', to: '[name].[ext]' }
+            { from: '**/*', to: '[path][name].[ext]', context: 'public/' }
         ]),
     ],
     module: {

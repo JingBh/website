@@ -10,3 +10,4 @@ dist
 
 # Aliyun OSS
 .ossrc
+ossutil_output
