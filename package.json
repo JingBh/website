@@ -31,6 +31,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "bootstrap": "^4.4",
+    "core-js": "3",
     "jquery": "^3.5",
     "popper.js": "^1.16.1",
     "scrollreveal": "^4.0"
