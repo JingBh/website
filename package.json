@@ -7,7 +7,7 @@
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
-    "dev": "webpack --config webpack.dev.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
     "deploy": "webpack --config webpack.common.js && ossutil --config-file .ossrc rm oss://jingbh-websites/ -raf && ossutil --config-file .ossrc cp ./dist oss://jingbh-websites -rf"
   },
   "devDependencies": {
@@ -24,8 +24,10 @@
     "mini-css-extract-plugin": "^0.9.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43",
     "webpack-cli": "^3.3",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
