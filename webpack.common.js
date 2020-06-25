@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const PnpWebpackPlugin = require('pnp-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -11,6 +12,16 @@ module.exports = {
   output: {
     filename: 'js/bundle.[hash].js',
     path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    plugins: [
+      PnpWebpackPlugin,
+    ],
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module),
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
