@@ -1,5 +1,5 @@
-# JingBh Websites
+# website
 
-The source of [JingBh's websites](https://www.jingbh.top/).
+The source of [JingBh's personal website](https://www.jingbh.top/).
 
 Designed and built by JingBh 2018-2020.

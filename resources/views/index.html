@@ -28,7 +28,7 @@
 <div class="container load-hidden" id="introContainer">
   <div class="row justify-content-center">
     <div class="col-md-9 col-lg-6">
-      <p>我叫JingBh，是一名高一学生。我从小就对电子设备非常感兴趣，现在热衷于研究网络编程，业余时间喜欢写程序、写网页。您现在看到的这个网站以及下面列出的所有项目都由我自己编写。这是我的个人主页。</p>
+      <p>我叫JingBh，是一名高一学生。我从小就对电子设备非常感兴趣，现在热衷于研究网络编程，业余时间喜欢写程序、写网页。您现在看到的这个网站以及下面列出的所有项目都由我自己编写。这是我的个人主页第 4 版。</p>
     </div>
   </div>
   <div class="row form-row justify-content-center text-center load-hidden" id="introButtons">
@@ -95,12 +95,12 @@
           <div class="row" id="mySkills">
             <div class="col-lg-6">
               <div class="progress load-hidden data-skill-p mb-2">
-                <div class="progress-bar bg-indigo data-skill" role="progressbar" style="min-width:3em;width:85%">PHP</div>
+                <div class="progress-bar bg-primary data-skill" role="progressbar" style="min-width:8em;width:85%">JavaScript</div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="progress load-hidden data-skill-p mb-2">
-                <div class="progress-bar bg-primary data-skill" role="progressbar" style="min-width:8em;width:85%">JavaScript</div>
+                <div class="progress-bar bg-indigo data-skill" role="progressbar" style="min-width:3em;width:85%">PHP</div>
               </div>
             </div>
             <div class="col-lg-6">
@@ -115,25 +115,25 @@
             </div>
             <div class="col-lg-6">
               <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-teal data-skill" role="progressbar" style="min-width:8em;width:45%">Linux 系统运维</div>
+                <div class="progress-bar bg-teal data-skill" role="progressbar" style="min-width:8em;width:45%">Linux 系统</div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-warning data-skill" role="progressbar" style="min-width:4em;width:10%"
-                     title="正在尝试学">Golang</div>
+                <div class="progress-bar bg-warning data-skill" role="progressbar" style="min-width:3em;width:40%"
+                     title="初学者阶段">Java</div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-transparent text-danger data-skill" role="progressbar" style="min-width:6em"
-                     title="绝对的小白...这就是从高级语言学起的后果...">C(++) / Java</div>
+                <div class="progress-bar bg-transparent text-danger data-skill" role="progressbar" style="min-width:5em"
+                     title="这就是从高级语言学起的后果...">C 系语言</div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="progress mb-2 load-hidden data-skill-p">
                 <div class="progress-bar bg-transparent text-dark data-skill" data-placement="bottom" role="progressbar"
-                     style="min-width:3em;width:100%" title="会一点点网络安全；比上面这些更基础的就不用说了吧">其它</div>
+                     style="min-width:3em;width:100%" title="比这些更基础的就不用说了吧">其它</div>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@
           <span></span>
           <h5 class="time">2019 年</h5>
           <div>
-            <p>我接触并学习了 <strong>thinkPHP</strong> 框架，并在其基础上写了许多小应用（不过后来都荒废了）。</p>
+            <p>我接触并学习了 <strong>thinkPHP</strong> 框架，并在其基础上写了许多小应用（不过后来都废弃了）。</p>
             <p>我在这段时间内为了维护服务器，也学习了 Linux 系统的用法。</p>
           </div>
         </li>
@@ -209,59 +209,33 @@
       </div>
     </div>
     <div class="mt-3 px-md-3 load-hidden" id="projectsList">
+      <!-- Gradients:
+      linear-gradient(to left, #00c9ff, #a6ffcb)
+      linear-gradient(to left, #1fa2ff, #12d8fa, #92fe9d)
+      linear-gradient(to right, #29ffc6, #3a7bd5)
+      linear-gradient(to right, #0cebeb, #5b86e5) -->
       <div class="mywork" style="background:linear-gradient(to left, #00c9ff, #a6ffcb);">
         <div class="mywork-flex">
           <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
-          <h3 class="mywork-title">ChessTerm</h3>
+          <h3 class="mywork-title">
+            ChessTerm
+            <small style="vertical-align:super;font-size:1.5rem;line-height:1rem;font-weight:lighter">for 久棋</small>
+          </h3>
         </div>
         <p class="mywork-intro">
           <span class="badge badge-primary">开源</span>
-          一个长得像命令行的棋盘
+          一个专注于久棋的云棋盘
         </p>
         <div class="mywork-content">
-          <p>这是我在学校的研学项目的一部分，是一个命令行形式的棋盘。它并非为某种单一游戏设计，而是可以自定义大小、规则，理论上可兼容大部分棋类游戏。</p>
+          <p>这是我在学校的研学项目的一部分，是一个云棋盘平台，专注于我们正在研究的民族棋类游戏——久棋。</p>
           <a class="btn btn-sm btn-primary" href="https://chessterm.tech/" target="_blank">去看看</a>
-          <a class="btn btn-sm btn-secondary" href="https://github.com/JingBh/flamechess" target="_blank">
+          <a class="btn btn-sm btn-secondary" href="https://github.com/ChessTerm" target="_blank">
             <i class="fab fa-github"></i>
             View on GitHub
           </a>
         </div>
       </div>
       <div class="mywork" style="background:linear-gradient(to left, #1fa2ff, #12d8fa, #92fe9d);">
-        <div class="mywork-flex">
-          <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
-          <img alt="AutoZP Logo" class="mywork-logo" src="https://storage.jingbh.top/autozp/logo.gif"
-               title="AutoZP">
-        </div>
-        <p class="mywork-intro">
-          <span class="badge badge-primary">开源</span>
-          <span class="badge badge-secondary">未完成</span>
-          一个<span class="font-weight-light mx-1">极简</span>综评客户端
-        </p>
-        <div class="mywork-content">
-          <p class="mb-0">综评系统的简化版客户端，同时也包含一些独家高级功能。</p>
-        </div>
-      </div>
-      <div class="mywork" style="background:linear-gradient(to right, #29ffc6, #3a7bd5);">
-        <div class="mywork-flex">
-          <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
-          <img alt="ScoreDB Logo" class="mywork-logo"
-               src="https://storage.jingbh.top/scoredb/logo1000sq.png/Logo128">
-          <h3 class="mywork-title">ScoreDB</h3>
-        </div>
-        <p class="mywork-intro">
-          <span class="badge badge-danger">已弃用</span>
-          统计我和同学们的考试成绩
-        </p>
-        <div class="mywork-content">
-          <p>
-            查询考试成绩，智能计算总分、排名、进步情况，为我和我的同学们提供方便。<br>
-            初中毕业后，ScoreDB v1不再使用。为了继续方便高中的学习生活，<strong>ScoreDB v2</strong>使用全新架构，功能更加丰富。
-          </p>
-          <p class="mb-0 text-danger">由于获取数据的行为违反相关规定，ScoreDB不再开放和继续开发。</p>
-        </div>
-      </div>
-      <div class="mywork" style="background:linear-gradient(to right, #0cebeb, #5b86e5);">
         <div class="mywork-flex">
           <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
           <h3 class="mywork-title">NCMTools</h3>
@@ -282,7 +256,7 @@
           </a>
         </div>
       </div>
-      <p class="mb-0 lead"><strong>还有很多很多......</strong></p>
+      <p class="mb-0 lead"><strong>以前还有很多......</strong></p>
       <p class="text-pink text-right small">但是基本上都废弃了。</p>
     </div>
   </div>

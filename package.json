@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "deploy": "webpack --config webpack.common.js && ossutil --config-file .ossrc rm oss://jingbh-websites/ -raf && ossutil --config-file .ossrc cp ./dist oss://jingbh-websites -rf"
+    "build": "webpack --config webpack.common.js"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
