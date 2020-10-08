@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="sr" lang="zh">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -9,285 +10,301 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127450734-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag("js", new Date());
     gtag("config", "UA-127450734-2");
   </script>
   <title>JingBh 个人主页</title>
 </head>
+
 <body>
-<div id="bg"></div>
-<div class="container load-hidden" id="avatarContainer">
-  <img alt="My avatar" class="rounded-circle" id="avatar" src="../images/avatar.png">
-  <h1 class="mt-3 font-weight-light">JingBh</h1>
-  <i class="fal fa-mars" style="color:lightskyblue;" title="Male"></i>
-  <span class="text-muted mx-1">/</span>
-  <span>16 Years Old</span><br>
-  <small><i class="fal fa-map-marker-alt text-orange" title="Position"></i> 北京市 海淀区</small>
-</div>
-<div class="container load-hidden" id="introContainer">
-  <div class="row justify-content-center">
-    <div class="col-md-9 col-lg-6">
-      <p>我叫JingBh，是一名高二学生。我从小就对电子设备非常感兴趣，现在热衷于研究编程，业余时间喜欢写程序、写网页。您现在看到的这个网站以及下面列出的所有项目都由我自己编写。这是我的个人主页第 4 版。</p>
-    </div>
+  <div id="bg"></div>
+  <div class="container load-hidden" id="avatarContainer">
+    <img alt="My avatar" class="rounded-circle" id="avatar" src="../images/avatar.png">
+    <h1 class="mt-3 font-weight-light">JingBh</h1>
+    <i class="fal fa-mars" style="color:lightskyblue;" title="Male"></i>
+    <span class="text-muted mx-1">/</span>
+    <span>16 Years Old</span><br>
+    <small><i class="fal fa-map-marker-alt text-orange" title="Position"></i> 北京市 海淀区</small>
   </div>
-  <div class="row form-row justify-content-center text-center load-hidden" id="introButtons">
-    <div class="col-auto mt-3">
-      <button class="btn btn-indigo" data-target="#sponsorModal" data-toggle="modal"><i class="fal fa-donate"></i>
-        Sponsor
-      </button>
-    </div>
-    <div class="col-auto mt-3">
-      <a class="btn btn-secondary" target="_blank" href="https://github.com/JingBh"><i class="fab fa-github"></i>
-        GitHub
-      </a>
-    </div>
-  </div>
-</div>
-<div class="container load-hidden my-5" id="infoCard">
-  <div class="container-card">
-    <div class="load-hidden mt-2" id="infoArrow">
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <i class="far fa-chevron-down fa-3x up-and-down"></i>
-        </div>
-        <div class="col-auto text-center">
-          <h2 class="font-weight-light">教育与能力</h2>
-        </div>
+  <div class="container load-hidden" id="introContainer">
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-lg-6">
+        <p>我叫JingBh，是一名高二学生。我从小就对电子设备非常感兴趣，现在热衷于研究编程，业余时间喜欢写程序、写网页。您现在看到的这个网站以及下面列出的所有项目都由我自己编写。这是我的个人主页第 4 版。</p>
       </div>
     </div>
-    <div class="mt-3">
-      <div class="row">
-        <div class="col-md-6 col-lg-7">
-          <div class="load-hidden" id="infoTitleEdu">
-            <h3 class="font-weight-light">教育</h3>
-            <hr>
-          </div>
-          <div class="load-hidden data-edu">
-            <div class="row">
-              <div class="col">
-                <h4 class="font-weight-light">初中</h4>
-              </div>
-              <div class="col-auto">
-                <small><i class="fas fa-calendar-alt"></i> 2016年7月~2019年6月</small>
-              </div>
-            </div>
-            <p>2016年，我升入初中，进入了<a href="http://www.qhfzsd.com" rel="noreferrer" target="_blank">清华大学附属中学上地学校</a>就读。在此就读期间，我受学校科技活动的影响，开始爱上了编程。</p>
-          </div>
-          <div class="load-hidden data-edu">
-            <div class="row">
-              <div class="col">
-                <h4 class="font-weight-light">高中</h4>
-              </div>
-              <div class="col-auto">
-                <small><i class="fas fa-calendar-alt"></i> 2019年8月</small>
-              </div>
-            </div>
-            <p>现在，我是<a href="http://www.qhfz.edu.cn" rel="noreferrer" target="_blank">清华大学附属中学</a> G19
-               年级的一名学生，是高研计算机科学实验室的成员。</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-5">
-          <div class="load-hidden mt-3 mt-md-0" id="infoTitleSkill">
-            <h3 class="font-weight-light">编程技能</h3>
-            <hr>
-          </div>
-          <div class="row" id="mySkills">
-            <div class="col-lg-6">
-              <div class="progress load-hidden data-skill-p mb-2">
-                <div class="progress-bar bg-primary data-skill" role="progressbar" style="min-width:8em;width:85%">JavaScript</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress load-hidden data-skill-p mb-2">
-                <div class="progress-bar bg-indigo data-skill" role="progressbar" style="min-width:3em;width:85%">PHP</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress load-hidden data-skill-p mb-2">
-                <div class="progress-bar bg-info data-skill" role="progressbar" style="min-width:5em;width:70%">Python</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-success data-skill" role="progressbar" style="min-width:8em;width:60%">HTML / CSS</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-teal data-skill" role="progressbar" style="min-width:8em;width:45%">Linux 系统</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-warning data-skill" role="progressbar" style="min-width:3em;width:40%"
-                     title="初学者阶段">Java</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-transparent text-danger data-skill" role="progressbar" style="min-width:5em"
-                     title="这就是从高级语言学起的后果...">C 系语言</div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="progress mb-2 load-hidden data-skill-p">
-                <div class="progress-bar bg-transparent text-dark data-skill" data-placement="bottom" role="progressbar"
-                     style="min-width:3em;width:100%" title="比这些更基础的就不用说了吧">其它</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="container load-hidden my-5" id="timelineCard">
-  <div class="container-card">
-    <div class="load-hidden mt-2" id="timelineArrow">
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <i class="far fa-chevron-down fa-3x up-and-down"></i>
-        </div>
-        <div class="col-auto text-center">
-          <h2 class="font-weight-light">我的经历</h2>
-        </div>
-      </div>
-    </div>
-    <div class="mt-3">
-      <ul class="timeline">
-        <li class="load-hidden">
-          <span></span>
-          <h5 class="time">2015 年</h5>
-          <div>
-            <p>我接触到了 C++ 语言，但是由于当时年龄太小，并没有学懂。不过这是我首次接触到一个正经的编程语言（以前只有 Scratch）。</p>
-          </div>
-        </li>
-        <li class="load-hidden">
-          <span></span>
-          <h5 class="time">2017 年</h5>
-          <div>
-            <p>初二，我接触到了 <strong>Python</strong> 语言。由于其语法简练，我经过一段时间的自学，逐渐掌握了 Python 语言的基础用法。当时，我自己尝试写了一个 Python module，叫“<strong>JingBh 模块</strong>”。它的功能非常简单，现在看起来似乎很幼稚，但这是我的第一个作品。</p>
-          </div>
-        </li>
-        <li class="load-hidden">
-          <span></span>
-          <h5 class="time">2018 年</h5>
-          <div>
-            <p>我学习了 <strong>HTML</strong> 和 <strong>CSS</strong> 语言，制作了一个和 JingBh 模块一样简易（以及幼稚）的网站。后来，我发现了写网站的快乐，于是学习了 <strong>JavaScript</strong>、<strong>PHP</strong> 语言、<strong>MySQL</strong> 数据库等等。不过，当时我的水平很有限，还没有接触到各类框架，只知道这些语言最基础的用法。当时最令我骄傲的是，我制作了一个<strong>网盘系统</strong>。它实现了用户登录、文件存储（肯定要有）、预览和分享（参考百度网盘）。<del class="small text-muted">话说初二的我怎么这么闲...</del></p>
-          </div>
-        </li>
-        <li class="load-hidden">
-          <span></span>
-          <h5 class="time">2019 年</h5>
-          <div>
-            <p>我接触并学习了 <strong>thinkPHP</strong> 框架，并在其基础上写了许多小应用（不过后来都废弃了）。</p>
-            <p>我在这段时间内为了维护服务器，也学习了 Linux 系统的用法。</p>
-          </div>
-        </li>
-        <li class="load-hidden">
-          <span></span>
-          <h5 class="time">2020 年</h5>
-          <div>
-            <p>我学习了 <strong>Laravel</strong> 框架，并通过 Laravel Mix 接触到了 <strong>Webpack</strong>，之后踩进前端大深坑，学习了 JavaScript 的各种用法（<strong>ES6/7</strong>、<strong>TypeScript</strong>）和各种框架（<strong>Vue</strong>、<strong>Nuxt</strong>），并且由于这个坑太深了，我仍在学习中。</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="container load-hidden my-5" id="projectsCard">
-  <div class="container-card">
-    <div class="load-hidden mt-2" id="projectsArrow">
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <i class="far fa-chevron-down fa-3x up-and-down"></i>
-        </div>
-        <div class="col-auto text-center">
-          <h2 class="font-weight-light">我的作品</h2>
-        </div>
-      </div>
-    </div>
-    <div class="mt-3 px-md-3 load-hidden" id="projectsList">
-      <!-- Gradients:
-      linear-gradient(to left, #00c9ff, #a6ffcb)
-      linear-gradient(to left, #1fa2ff, #12d8fa, #92fe9d)
-      linear-gradient(to right, #29ffc6, #3a7bd5)
-      linear-gradient(to right, #0cebeb, #5b86e5) -->
-      <div class="mywork" style="background:linear-gradient(to left, #00c9ff, #a6ffcb);">
-        <div class="mywork-flex">
-          <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
-          <h3 class="mywork-title">
-            ChessTerm
-            <small style="vertical-align:super;font-size:1.5rem;line-height:1rem;font-weight:lighter">for 久棋</small>
-          </h3>
-        </div>
-        <p class="mywork-intro">
-          <span class="badge badge-primary">开源</span>
-          一个专注于久棋的云棋盘
-        </p>
-        <div class="mywork-content">
-          <p>这是我在学校的研学项目的一部分，是一个云棋盘平台，专注于我们正在研究的民族棋类游戏——久棋。</p>
-          <a class="btn btn-sm btn-primary" href="https://chessterm.tech/" target="_blank">去看看</a>
-          <a class="btn btn-sm btn-secondary" href="https://github.com/ChessTerm" target="_blank">
-            <i class="fab fa-github"></i>
-            View on GitHub
-          </a>
-        </div>
-      </div>
-      <div class="mywork" style="background:linear-gradient(to left, #1fa2ff, #12d8fa, #92fe9d);">
-        <div class="mywork-flex">
-          <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
-          <h3 class="mywork-title">NCMTools</h3>
-        </div>
-        <p class="mywork-intro">
-          <span class="badge badge-primary">开源</span>
-          网易云音乐小工具
-        </p>
-        <div class="mywork-content">
-          <h4 class="font-weight-light">NCMRank</h4>
-          <p class="mb-0">一个用来统计我自己在网易云音乐每天听歌数目和升级进度的小工具，不对其他用户开放。</p>
-          <hr>
-          <h4 class="font-weight-light">NCMFetch</h4>
-          <p>NCMFetch 可以帮您下载网易云音乐上的歌曲，不需要登录、VIP、或下载客户端。</p>
-          <a class="btn btn-sm btn-secondary" href="https://github.com/JingBh/NCMFetch" target="_blank">
-            <i class="fab fa-github"></i>
-            View on GitHub
-          </a>
-        </div>
-      </div>
-      <p class="mb-0 lead"><strong>以前还有很多......</strong></p>
-      <p class="text-pink text-right small">但是基本上都废弃了。</p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid p-0 mt-3" id="footer">
-  <footer class="text-dark p-5" style="overflow-x: hidden;">
-    <h5>本站由JingBh设计制作，版权所有 &copy; JingBh 2018-2020，保留所有权利。</h5>
-    <!--<hr>
-    <h5>友情链接</h5>
-    <p class="small">
-        <a class="text-dark" href="https://www.zhc7.top/" target="_blank" rel="noreferrer">ZHC</a>
-    </p>-->
-  </footer>
-</div>
-<div class="modal fade" id="sponsorModal" role="dialog" tabindex="-1">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title"><i class="far fa-donate"></i> Sponsor Me</h5>
-        <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span>
+    <div class="row form-row justify-content-center text-center load-hidden" id="introButtons">
+      <div class="col-auto mt-3">
+        <button class="btn btn-indigo" data-target="#sponsorModal" data-toggle="modal"><i class="fal fa-donate"></i>
+          Sponsor
         </button>
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/donate.png" alt="付款二维码">
-      </div>
-      <div class="modal-footer">
-        <p class="lead text-muted">对您的一切支持表示由衷感谢！</p>
-        <button class="btn btn-secondary" data-dismiss="modal" type="button">关闭</button>
+      <div class="col-auto mt-3">
+        <a class="btn btn-secondary" target="_blank" href="https://github.com/JingBh"><i class="fab fa-github"></i>
+          GitHub
+        </a>
       </div>
     </div>
   </div>
-</div>
+  <div class="container load-hidden my-5" id="infoCard">
+    <div class="container-card">
+      <div class="load-hidden mt-2" id="infoArrow">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <i class="far fa-chevron-down fa-3x up-and-down"></i>
+          </div>
+          <div class="col-auto text-center">
+            <h2 class="font-weight-light">教育与能力</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <div class="load-hidden" id="infoTitleEdu">
+              <h3 class="font-weight-light">教育</h3>
+              <hr>
+            </div>
+            <div class="load-hidden data-edu">
+              <div class="row">
+                <div class="col">
+                  <h4 class="font-weight-light">初中</h4>
+                </div>
+                <div class="col-auto">
+                  <small><i class="fas fa-calendar-alt"></i> 2016年7月~2019年6月</small>
+                </div>
+              </div>
+              <p>2016年，我升入初中，进入了<a href="http://www.qhfzsd.com" rel="noreferrer"
+                  target="_blank">清华大学附属中学上地学校</a>就读。在此就读期间，我受学校科技活动的影响，开始爱上了编程。</p>
+            </div>
+            <div class="load-hidden data-edu">
+              <div class="row">
+                <div class="col">
+                  <h4 class="font-weight-light">高中</h4>
+                </div>
+                <div class="col-auto">
+                  <small><i class="fas fa-calendar-alt"></i> 2019年8月</small>
+                </div>
+              </div>
+              <p>现在，我是<a href="http://www.qhfz.edu.cn" rel="noreferrer" target="_blank">清华大学附属中学</a> G19
+                年级的一名学生，是高研计算机科学实验室的成员。</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="load-hidden mt-3 mt-md-0" id="infoTitleSkill">
+              <h3 class="font-weight-light">编程技能</h3>
+              <hr>
+            </div>
+            <div class="row" id="mySkills">
+              <div class="col-lg-6">
+                <div class="progress load-hidden data-skill-p mb-2">
+                  <div class="progress-bar bg-primary data-skill" role="progressbar" style="min-width:8em;width:85%">
+                    JavaScript</div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress load-hidden data-skill-p mb-2">
+                  <div class="progress-bar bg-indigo data-skill" role="progressbar" style="min-width:3em;width:85%">PHP
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress load-hidden data-skill-p mb-2">
+                  <div class="progress-bar bg-info data-skill" role="progressbar" style="min-width:5em;width:70%">Python
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress mb-2 load-hidden data-skill-p">
+                  <div class="progress-bar bg-success data-skill" role="progressbar" style="min-width:8em;width:60%">
+                    HTML / CSS</div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress mb-2 load-hidden data-skill-p">
+                  <div class="progress-bar bg-teal data-skill" role="progressbar" style="min-width:8em;width:45%">Linux
+                    系统</div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress mb-2 load-hidden data-skill-p">
+                  <div class="progress-bar bg-warning data-skill" role="progressbar" style="min-width:3em;width:40%"
+                    title="初学者阶段">Java</div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress mb-2 load-hidden data-skill-p">
+                  <div class="progress-bar bg-transparent text-danger data-skill" role="progressbar"
+                    style="min-width:5em" title="这就是从高级语言学起的后果...">C 系语言</div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="progress mb-2 load-hidden data-skill-p">
+                  <div class="progress-bar bg-transparent text-dark data-skill" data-placement="bottom"
+                    role="progressbar" style="min-width:3em;width:100%" title="比这些更基础的就不用说了吧">其它</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container load-hidden my-5" id="timelineCard">
+    <div class="container-card">
+      <div class="load-hidden mt-2" id="timelineArrow">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <i class="far fa-chevron-down fa-3x up-and-down"></i>
+          </div>
+          <div class="col-auto text-center">
+            <h2 class="font-weight-light">我的经历</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <ul class="timeline">
+          <li class="load-hidden">
+            <span></span>
+            <h5 class="time">2015 年</h5>
+            <div>
+              <p>我接触到了 C++ 语言，但是由于当时年龄太小，并没有学懂。不过这是我首次接触到一个正经的编程语言（以前只有 Scratch）。</p>
+            </div>
+          </li>
+          <li class="load-hidden">
+            <span></span>
+            <h5 class="time">2017 年</h5>
+            <div>
+              <p>初二，我接触到了 <strong>Python</strong> 语言。由于其语法简练，我经过一段时间的自学，逐渐掌握了 Python 语言的基础用法。当时，我自己尝试写了一个 Python
+                module，叫“<strong>JingBh 模块</strong>”。它的功能非常简单，现在看起来似乎很幼稚，但这是我的第一个作品。</p>
+            </div>
+          </li>
+          <li class="load-hidden">
+            <span></span>
+            <h5 class="time">2018 年</h5>
+            <div>
+              <p>我学习了 <strong>HTML</strong> 和 <strong>CSS</strong> 语言，制作了一个和 JingBh 模块一样简易（以及幼稚）的网站。后来，我发现了写网站的快乐，于是学习了
+                <strong>JavaScript</strong>、<strong>PHP</strong> 语言、<strong>MySQL</strong>
+                数据库等等。不过，当时我的水平很有限，还没有接触到各类框架，只知道这些语言最基础的用法。当时最令我骄傲的是，我制作了一个<strong>网盘系统</strong>。它实现了用户登录、文件存储（肯定要有）、预览和分享（参考百度网盘）。<del
+                  class="small text-muted">话说初二的我怎么这么闲...</del></p>
+            </div>
+          </li>
+          <li class="load-hidden">
+            <span></span>
+            <h5 class="time">2019 年</h5>
+            <div>
+              <p>我接触并学习了 <strong>thinkPHP</strong> 框架，并在其基础上写了许多小应用（不过后来都废弃了）。</p>
+              <p>我在这段时间内为了维护服务器，也学习了 Linux 系统的用法。</p>
+            </div>
+          </li>
+          <li class="load-hidden">
+            <span></span>
+            <h5 class="time">2020 年</h5>
+            <div>
+              <p>我学习了 <strong>Laravel</strong> 框架，并通过 Laravel Mix 接触到了 <strong>Webpack</strong>，之后踩进前端大深坑，学习了 JavaScript
+                的各种用法（<strong>ES6/7</strong>、<strong>TypeScript</strong>）和各种框架（<strong>Vue</strong>、<strong>Nuxt</strong>），并且由于这个坑太深了，我仍在学习中。
+              </p>
+              <p>我还尝试学习了 <strong>Java</strong>，目前还在初学者阶段。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container load-hidden my-5" id="projectsCard">
+    <div class="container-card">
+      <div class="load-hidden mt-2" id="projectsArrow">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <i class="far fa-chevron-down fa-3x up-and-down"></i>
+          </div>
+          <div class="col-auto text-center">
+            <h2 class="font-weight-light">我的作品</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3 px-md-3 load-hidden" id="projectsList">
+        <!-- Gradients:
+        linear-gradient(to left, #00c9ff, #a6ffcb)
+        linear-gradient(to left, #1fa2ff, #12d8fa, #92fe9d)
+        linear-gradient(to right, #29ffc6, #3a7bd5)
+        linear-gradient(to right, #0cebeb, #5b86e5) -->
+        <div class="mywork" style="background:linear-gradient(to left, #00c9ff, #a6ffcb);">
+          <div class="mywork-flex">
+            <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
+            <h3 class="mywork-title">
+              ChessTerm
+              <small style="vertical-align:super;font-size:1.5rem;line-height:1rem;font-weight:lighter">for 久棋</small>
+            </h3>
+          </div>
+          <p class="mywork-intro">
+            <span class="badge badge-primary">开源</span>
+            一个专注于久棋的云棋盘
+          </p>
+          <div class="mywork-content">
+            <p>这是我在学校的研学项目的一部分，是一个云棋盘平台，专注于我们正在研究的民族棋类游戏——久棋。</p>
+            <a class="btn btn-sm btn-primary" href="https://chessterm.tech/" target="_blank">去看看</a>
+            <a class="btn btn-sm btn-secondary" href="https://github.com/ChessTerm" target="_blank">
+              <i class="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="mywork" style="background:linear-gradient(to left, #1fa2ff, #12d8fa, #92fe9d);">
+          <div class="mywork-flex">
+            <i class="fal fa-arrow-right fa-fw mywork-pointer"></i>
+            <h3 class="mywork-title">NCMTools</h3>
+          </div>
+          <p class="mywork-intro">
+            <span class="badge badge-primary">开源</span>
+            网易云音乐小工具
+          </p>
+          <div class="mywork-content">
+            <h4 class="font-weight-light">NCMRank</h4>
+            <p class="mb-0">一个用来统计我自己在网易云音乐每天听歌数目和升级进度的小工具，不对其他用户开放。</p>
+            <hr>
+            <h4 class="font-weight-light">NCMFetch</h4>
+            <p>NCMFetch 可以帮您下载网易云音乐上的歌曲，不需要登录、VIP、或下载客户端。</p>
+            <a class="btn btn-sm btn-secondary" href="https://github.com/JingBh/NCMFetch" target="_blank">
+              <i class="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <p class="mb-0 lead"><strong>以前还有很多......</strong></p>
+        <p class="text-pink text-right small">但是基本上都废弃了。</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0 mt-3" id="footer">
+    <footer class="text-dark p-5" style="overflow-x: hidden;">
+      <h5>本站由JingBh设计制作，版权所有 &copy; JingBh 2018-2020，保留所有权利。</h5>
+      <!--<hr>
+      <h5>友情链接</h5>
+      <p class="small">
+        <a class="text-dark" href="https://www.zhc7.top/" target="_blank" rel="noreferrer">ZHC</a>
+      </p>-->
+    </footer>
+  </div>
+  <div class="modal fade" id="sponsorModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="far fa-donate"></i> Sponsor Me</h5>
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span
+              aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="../images/donate.png" alt="付款二维码">
+        </div>
+        <div class="modal-footer">
+          <p class="lead text-muted">对您的一切支持表示由衷感谢！</p>
+          <button class="btn btn-secondary" data-dismiss="modal" type="button">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
