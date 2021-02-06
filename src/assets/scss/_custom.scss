@@ -1,0 +1,28 @@
+html, body, #bg, #app, #appContainer {
+  height: 100%;
+  width: 100%;
+}
+
+#appContainer {
+  position: relative;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background-image: url(../images/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+}
+
+@import "tippy_themes";

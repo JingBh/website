@@ -1,0 +1,49 @@
+<template>
+  <div
+    id="avatarContainer"
+    class="container"
+  >
+    <img
+      id="avatar"
+      class="rounded-circle"
+      alt="JingBh's avatar"
+      src="../assets/images/avatar.png"
+    >
+    <h1 class="mt-3 fw-light">
+      JingBh
+    </h1>
+    <span class="text-info fw-bold">♂</span>
+    <span class="text-muted mx-1">/</span>
+    <span>{{ age }} Years Old</span><br>
+    <small><i class="bi-geo-alt text-orange" /> Beijing, China</small>
+  </div>
+</template>
+
+<script lang="ts">
+import { Vue } from 'vue-class-component'
+import { DateTime } from 'luxon'
+
+const birthday = DateTime.fromMillis(1073664000000)
+
+export default class AvatarContainer extends Vue {
+  get age (): number {
+    return Math.floor(DateTime.local().diff(birthday, 'years').years)
+  }
+}
+</script>
+
+<style>
+  #avatarContainer {
+    padding-top: 20vh;
+    text-align: center;
+  }
+
+  #avatar {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .text-orange {
+    color: var(--bs-orange);
+  }
+</style>

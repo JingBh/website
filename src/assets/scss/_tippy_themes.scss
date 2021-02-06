@@ -1,0 +1,28 @@
+.tippy-box[data-theme~='unpadded'] {
+  background: none;
+  border: none;
+  color: var(--bs-dark);
+  padding: 0;
+}
+
+.tippy-box[data-theme~='chip'] {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem;
+  color: var(--bs-dark);
+
+  &[data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: rgba(255, 255, 255, 0.95);
+  }
+
+  &[data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: rgba(255, 255, 255, 0.95);
+  }
+
+  &[data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: rgba(255, 255, 255, 0.95);
+  }
+
+  &[data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: rgba(255, 255, 255, 0.95);
+  }
+}
