@@ -2225,10 +2225,10 @@ bootstrap-icons@^1.3.0:
   resolved "https://registry.npm.taobao.org/bootstrap-icons/download/bootstrap-icons-1.3.0.tgz#fb9d704622fcb30a0329695d5033d97171947d04"
   integrity sha1-+51wRiL8swoDKWldUDPZcXGUfQQ=
 
-bootstrap@^5.0.0-beta1:
-  version "5.0.0-beta1"
-  resolved "https://registry.npm.taobao.org/bootstrap/download/bootstrap-5.0.0-beta1.tgz#18135001a452b3ec38b344ac638a1f9549285ee7"
-  integrity sha1-GBNQAaRSs+w4s0SsY4oflUkoXuc=
+bootstrap@^5.0.0-beta2:
+  version "5.0.0-beta2"
+  resolved "https://registry.npm.taobao.org/bootstrap/download/bootstrap-5.0.0-beta2.tgz#ab1504a12807fa58e5e41408e35fcea42461e84b"
+  integrity sha1-qxUEoSgH+ljl5BQI41/OpCRh6Es=
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -5349,18 +5349,6 @@ is-docker@^2.0.0:
   resolved "https://registry.npm.taobao.org/is-docker/download/is-docker-2.1.1.tgz?cache=0&sync_timestamp=1596559351223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-docker%2Fdownload%2Fis-docker-2.1.1.tgz#4125a88e44e450d384e09047ede71adc2d144156"
   integrity sha1-QSWojkTkUNOE4JBH7eca3C0UQVY=
 
-is-dom-node-list@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npm.taobao.org/is-dom-node-list/download/is-dom-node-list-1.2.1.tgz#141ded0c66de759d0976800d21370bb908f2950f"
-  integrity sha1-FB3tDGbedZ0JdoANITcLuQjylQ8=
-  dependencies:
-    is-dom-node "^1.0.4"
-
-is-dom-node@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npm.taobao.org/is-dom-node/download/is-dom-node-1.0.4.tgz#abb18af7133f1e687610cfeb274da1ced342f1c5"
-  integrity sha1-q7GK9xM/Hmh2EM/rJ02hztNC8cU=
-
 is-extendable@^0.1.0, is-extendable@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npm.taobao.org/is-extendable/download/is-extendable-0.1.1.tgz#62b110e289a471418e3ec36a617d472e301dfc89"
@@ -6264,11 +6252,6 @@ minipass@^3.0.0, minipass@^3.1.1:
   integrity sha1-fUL/HzljVILhX5zbUxhN7r1YFf0=
   dependencies:
     yallist "^4.0.0"
-
-miniraf@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/miniraf/download/miniraf-1.0.0.tgz#5d88e108bbdcb55b4a2ff3da337f24a13a3377e1"
-  integrity sha1-XYjhCLvctVtKL/PaM38koTozd+E=
 
 mississippi@^3.0.0:
   version "3.0.0"
@@ -7751,11 +7734,6 @@ relateurl@0.2.x:
   resolved "https://registry.npm.taobao.org/relateurl/download/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
-rematrix@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npm.taobao.org/rematrix/download/rematrix-0.3.0.tgz#4f3f9156aa80ded8a8ca23785f48c6012b6dea4a"
-  integrity sha1-Tz+RVqqA3tioyiN4X0jGAStt6ko=
-
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/remove-trailing-separator/download/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -8018,15 +7996,6 @@ schema-utils@^2.0.0, schema-utils@^2.5.0, schema-utils@^2.6.1, schema-utils@^2.6
     "@types/json-schema" "^7.0.5"
     ajv "^6.12.4"
     ajv-keywords "^3.5.2"
-
-scrollreveal@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.npm.taobao.org/scrollreveal/download/scrollreveal-4.0.7.tgz#a1e1a969431ec3b1dc6c19d8d36ed8fd8cfe4412"
-  integrity sha1-oeGpaUMew7HcbBnY027Y/Yz+RBI=
-  dependencies:
-    miniraf "1.0.0"
-    rematrix "0.3.0"
-    tealight "0.3.6"
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -8709,14 +8678,6 @@ tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://registry.npm.taobao.org/tapable/download/tapable-1.1.3.tgz?cache=0&sync_timestamp=1607088824436&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftapable%2Fdownload%2Ftapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha1-ofzMBrWNth/XpF2i2kT186Pme6I=
-
-tealight@0.3.6:
-  version "0.3.6"
-  resolved "https://registry.npm.taobao.org/tealight/download/tealight-0.3.6.tgz#14c8071ce3c188972a5cb7d8a5668ca2820b4292"
-  integrity sha1-FMgHHOPBiJcqXLfYpWaMooILQpI=
-  dependencies:
-    is-dom-node "^1.0.4"
-    is-dom-node-list "^1.2.1"
 
 terser-webpack-plugin@^1.4.3:
   version "1.4.5"
