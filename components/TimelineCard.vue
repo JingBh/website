@@ -14,7 +14,7 @@
         <li>
           <span />
           <h5 class="time">
-            {{ $t('year', { 'year': 2015 }) }}
+            {{ $t('year', { 'year': 2017 }) }}
           </h5>
           <div>
             <p>初二，我接触到了 <strong>Python</strong> 语言。经过一段时间的自学，我逐渐掌握了 Python 语言的基础用法。</p>
