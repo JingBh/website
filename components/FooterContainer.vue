@@ -6,7 +6,7 @@
     <footer>
       <div class="row justify-content-evenly">
         <div class="col-sm-auto text-sm-center">
-          <h5>本站由 JingBh 设计制作</h5>
+          <h5>{{ $t('built-by') }}</h5>
           <h6 class="mb-0">
             &copy; JingBh 2018-{{ year }}
           </h6>
@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-auto">
           <h6 class="mb-1">
-            Source available at:
+            {{ $t('source-at') }}
           </h6>
           <p class="mb-1">
             <a
@@ -23,7 +23,7 @@
               target="_blank"
             >
               <i class="bi-github" />
-              <strong class="mx-1">JingBh/website</strong>
+              <strong class="mr-1">JingBh/website</strong>
             </a>
             <small class="text-muted">v{{ version }}</small>
           </p>

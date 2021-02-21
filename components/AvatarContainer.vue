@@ -6,7 +6,7 @@
     <img
       id="avatar"
       class="rounded-circle"
-      alt="JingBh's avatar"
+      :alt="$t('jingbhs-avatar')"
       src="../assets/images/avatar.png"
     >
     <h1 class="mt-3 fw-light">
@@ -14,8 +14,8 @@
     </h1>
     <span class="text-info fw-bold">♂</span>
     <span class="text-muted mx-1">/</span>
-    <span>{{ age }} Years Old</span><br>
-    <small><i class="bi-geo-alt text-orange" /> Beijing, China</small>
+    <span>{{ $t('age', { age }) }}</span><br>
+    <small><i class="bi-geo-alt text-orange" /> {{ $t('beijing') }}</small>
   </div>
 </template>
 

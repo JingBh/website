@@ -1,11 +1,11 @@
 <template>
   <div class="container my-5">
-    <container-card title="我的经历">
+    <container-card :title="$t('my-experience')">
       <ul class="timeline">
         <li>
           <span />
           <h5 class="time">
-            2015 年
+            {{ $t('year', { 'year': 2015 }) }}
           </h5>
           <div>
             <p>我接触到了 C++ 语言，但是由于当时年龄太小，并没有学懂。不过这是我首次接触到一个正经的编程语言（以前只有 Scratch）。</p>
@@ -14,7 +14,7 @@
         <li>
           <span />
           <h5 class="time">
-            2017 年
+            {{ $t('year', { 'year': 2015 }) }}
           </h5>
           <div>
             <p>初二，我接触到了 <strong>Python</strong> 语言。经过一段时间的自学，我逐渐掌握了 Python 语言的基础用法。</p>
@@ -23,7 +23,7 @@
         <li>
           <span />
           <h5 class="time">
-            2018 年
+            {{ $t('year', { 'year': 2018 }) }}
           </h5>
           <div>
             <p>
@@ -36,7 +36,7 @@
         <li>
           <span />
           <h5 class="time">
-            2019 年
+            {{ $t('year', { 'year': 2019 }) }}
           </h5>
           <div>
             <p>我接触并学习了 <strong>thinkPHP</strong> 框架，并在其基础上写了许多小应用（不过后来都废弃了）。</p>
@@ -46,7 +46,7 @@
         <li>
           <span />
           <h5 class="time">
-            2020 年
+            {{ $t('year', { 'year': 2020 }) }}
           </h5>
           <div>
             <p>
@@ -58,7 +58,7 @@
         <li>
           <span />
           <h5 class="time">
-            2021 年
+            {{ $t('year', { 'year': 2021 }) }}
           </h5>
           <div>
             <p class="text-secondary">

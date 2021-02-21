@@ -1,20 +1,20 @@
 <template>
   <div class="container my-5">
-    <container-card title="我的技能">
+    <container-card :title="$t('my-skills')">
       <div class="row gy-4">
         <div class="col-md">
           <h4 class="fw-light">
-            编程语言
+            {{ $t('programming-languages') }}
           </h4>
           <hr>
 
           <p class="small text-muted mb-3">
-            提示：
+            {{ $t('hint') }}
             <span class="d-inline d-md-none">
-              点击这些小卡片可以查看更多内容
+              {{ $t('chip-hint-click') }}
             </span>
             <span class="d-none d-md-inline">
-              鼠标悬浮在这些小卡片上可以查看更多内容
+              {{ $t('chip-hint-hover') }}
             </span>
           </p>
 
@@ -74,7 +74,7 @@
 
           <chip
             title="Python"
-            icon="devicon-python-plain"
+            icon="devicon-python-plain colored"
           >
             <p>主要用来写一些小脚本，有时候也用来处理一些数据，没什么太了解的框架。</p>
             <chip title="Anaconda" />
@@ -103,7 +103,7 @@
             一窍不通的：
           </h6>
 
-          <chip title="会是什么呢？">
+          <chip :title="$t('what-could-it-be')">
             <p class="text-danger fw-bold mb-0">
               可恶，除了 C / C++ 还能是什么！
             </p>
@@ -111,7 +111,7 @@
         </div>
         <div class="col-md">
           <h4 class="fw-light">
-            服务器运维
+            {{ $t('server-operation') }}
           </h4>
           <hr>
           <p class="small text-muted">

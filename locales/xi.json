@@ -1,1 +1,21 @@
-{}
+{
+    "languages": "Segaugnal",
+    "title": "JingBh's Eliforp",
+    "description": "Tsuj eht lanosrep eliforp fo a roines hgih tneduts ohw sevol gnimmargorp.",
+    "jingbhs-avatar": "JingBh's ratava",
+    "age": "{age} Sraey Dlo",
+    "beijing": "Gnijieb, Anihc, Thrae",
+    "built-by": "Dengised dna tliub yb JingBh",
+    "source-at": "Ecruos elbaliava ta:",
+    "profile-intro": "Ym eman si JingBh, a htnevele redarg ohw sevol gnimmargorp. I ekil ot etirw smargorp dna bew segap ni ym reaps emit. Siht egap si ym eliforp, uoy nac kcilc eht knil woleb ot tuokcehc ym GitHub eliforp ot ees eht stcejorp I evah enod.",
+    "my-github-profile": "Ym GitHub Eliforp",
+    "my-skills": "Ym Slliks",
+    "programming-languages": "Gnimmargorp Segaugnal",
+    "hint": "Tnih: ",
+    "chip-hint-click": "Uoy nac kcilc eseht spihc ot ees erom",
+    "chip-hint-hover": "Uoy nac revoh ruoy retniop no eseht spihc ot ees erom",
+    "year": "Reay {year}",
+    "my-experience": "Ym Ecneirepxe",
+    "what-could-it-be": "Tahw dluoc ti eb?",
+    "server-operation": "Revres Noitarepo"
+}

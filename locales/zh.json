@@ -1,4 +1,21 @@
 {
-  "title": "JingBh 个人主页",
-  "description": "只是一名热衷编程的高中生的个人主页。"
+    "languages": "语言",
+    "title": "JingBh 个人主页",
+    "description": "只是一名热衷编程的高中生的个人主页。",
+    "jingbhs-avatar": "JingBh 的头像",
+    "age": "{age} 岁",
+    "beijing": "北京",
+    "built-by": "本站由 JingBh 设计制作。",
+    "source-at": "本站源码见：",
+    "profile-intro": "我叫 JingBh，目前是一名高二学生，热衷于研究编程，业余时间喜欢写程序、写网页。您现在看到的是我的个人主页，您可以点击下面链接去我的 GitHub 主页看看我都写过些什么东西。",
+    "my-github-profile": "我的 GitHub 主页",
+    "my-skills": "我的技能",
+    "programming-languages": "编程语言",
+    "hint": "提示：",
+    "chip-hint-click": "点击这些小卡片可以查看更多内容",
+    "chip-hint-hover": "鼠标悬浮在这些小卡片上可以查看更多内容",
+    "year": "{year} 年",
+    "my-experience": "我的经历",
+    "what-could-it-be": "会是什么呢？",
+    "server-operation": "服务器运维"
 }

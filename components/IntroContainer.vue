@@ -5,9 +5,7 @@
   >
     <div class="row justify-content-center">
       <div class="col-md-9 col-lg-7 col-xl-6">
-        <p>
-          我叫 JingBh，目前是一名高二学生，热衷于研究编程，业余时间喜欢写程序、写网页。您现在看到的是我的个人主页，您可以点击下面链接去我的 GitHub 主页看看我都写过些什么东西。
-        </p>
+        <p>{{ $t('profile-intro') }}</p>
       </div>
     </div>
     <div
@@ -20,7 +18,7 @@
           href="https://github.com/JingBh"
           target="_blank"
         ><i class="bi-github" />
-          My GitHub Profile
+          {{ $t('my-github-profile') }}
         </a>
       </div>
     </div>

@@ -1,3 +1,21 @@
 {
-  "title": "JingBh's Profile"
+    "languages": "Languages",
+    "title": "JingBh's Profile",
+    "description": "Just the personal profile of a senior high student who loves programming.",
+    "jingbhs-avatar": "JingBh's avatar",
+    "age": "{age} Years Old",
+    "beijing": "Beijing, China",
+    "built-by": "Designed and built by JingBh",
+    "source-at": "Source available at:",
+    "profile-intro": "My name is JingBh, a eleventh grader who loves programming. I like to write programs and web pages in my spare time. This page is my profile, you can click the link below to checkout my GitHub profile to see the projects I have done.",
+    "my-github-profile": "My GitHub Profile",
+    "my-skills": "My Skills",
+    "programming-languages": "Programming Languages",
+    "hint": "Hint: ",
+    "chip-hint-click": "You can click these chips to see more",
+    "chip-hint-hover": "You can hover your pointer on these chips to see more",
+    "year": "Year {year}",
+    "my-experience": "My Experience",
+    "what-could-it-be": "What could it be?",
+    "server-operation": "Server Operation"
 }
