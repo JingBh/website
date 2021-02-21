@@ -72,12 +72,12 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { Component, Vue } from 'nuxt-property-decorator'
 
 import ContainerCard from './utils/ContainerCard.vue'
 import Chip from './utils/Chip.vue'
 
-@Options({
+@Component({
   components: {
     ContainerCard,
     Chip

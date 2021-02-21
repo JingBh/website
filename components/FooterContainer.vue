@@ -18,9 +18,9 @@
           </h6>
           <p class="mb-1">
             <a
+              ref="repo-link"
               href="https://github.com/JingBh/website.git"
               target="_blank"
-              ref="repoLink"
             >
               <i class="bi-github" />
               <strong class="mx-1">JingBh/website</strong>
@@ -44,13 +44,16 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component'
+import { Component, Vue, Ref } from 'nuxt-property-decorator'
 import { DateTime } from 'luxon'
 import tippy, { followCursor, Instance, sticky } from 'tippy.js'
 
-import { version } from '@/../package.json'
+import { version } from '~/package.json'
 
+@Component
 export default class FooterContainer extends Vue {
+  @Ref('repo-link') readonly repoLink!: HTMLLinkElement
+
   repoTippy: Instance | null = null
 
   get year (): number {
@@ -62,8 +65,7 @@ export default class FooterContainer extends Vue {
   }
 
   mounted () {
-    const ele = this.$refs.repoLink as HTMLLinkElement
-    this.repoTippy = tippy(ele, {
+    this.repoTippy = tippy(this.repoLink, {
       arrow: false,
       content () {
         const img = document.createElement('img')
@@ -82,7 +84,7 @@ export default class FooterContainer extends Vue {
     })
   }
 
-  beforeUnmount () {
+  beforeDestroy () {
     if (this.repoTippy) {
       this.repoTippy.destroy()
     }

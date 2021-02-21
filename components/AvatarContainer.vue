@@ -20,11 +20,12 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component'
+import { Component, Vue } from 'nuxt-property-decorator'
 import { DateTime } from 'luxon'
 
 const birthday = DateTime.fromMillis(1073664000000)
 
+@Component
 export default class AvatarContainer extends Vue {
   get age (): number {
     return Math.floor(DateTime.local().diff(birthday, 'years').years)

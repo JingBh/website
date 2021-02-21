@@ -1,13 +1,6 @@
-html, body, #bg, #app, #appContainer {
+#bg {
   height: 100%;
   width: 100%;
-}
-
-#appContainer {
-  position: relative;
-}
-
-#bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,11 +11,6 @@ html, body, #bg, #app, #appContainer {
   background-position: center;
   pointer-events: none;
   user-select: none;
-}
-
-.navbar-brand img {
-  width: 30px;
-  height: 30px;
 }
 
 @import "tippy_themes";

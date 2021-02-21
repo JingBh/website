@@ -1,76 +1,47 @@
 {
   "name": "@jingbh/website",
   "description": "JingBh's personal website.",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "license": "GPL-3.0-or-later",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "bootstrap": "^5.0.0-beta2",
-    "bootstrap-icons": "^1.3.0",
-    "core-js": "^3.6.5",
-    "devicon": "^2.2.0",
-    "luxon": "^1.25.0",
-    "tippy.js": "^6.2.7",
-    "vue": "^3.0.0",
-    "vue-class-component": "^8.0.0-0"
-  },
-  "devDependencies": {
-    "@types/bootstrap": "^5.0.5",
-    "@types/luxon": "^1.25.1",
-    "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "@typescript-eslint/parser": "^2.33.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "@vue/eslint-config-typescript": "^5.0.2",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^7.0.0-0",
-    "lint-staged": "^9.5.0",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
-    "typescript": "~3.9.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/strongly-recommended",
-      "@vue/standard",
-      "@vue/typescript/recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {
-      "no-new": "off"
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "dev": "nuxt-ts",
+    "generate": "nuxt-ts generate",
+    "lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore ."
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.1",
+    "bootstrap": "^5.0.0-beta2",
+    "bootstrap-icons": "^1.3.0",
+    "core-js": "^3.8.3",
+    "devicon": "^2.2.0",
+    "luxon": "^1.26.0",
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.20.2",
+    "nuxt-property-decorator": "^2.9.1",
+    "tippy.js": "^6.2.7"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@types/luxon": "^1.26.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
   }
 }

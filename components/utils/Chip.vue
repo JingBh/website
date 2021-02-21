@@ -1,7 +1,7 @@
 <template>
-  <div
-    class="chip shadow-sm"
+  <span
     ref="chip"
+    class="chip shadow-sm"
   >
     <i
       v-if="icon"
@@ -14,20 +14,21 @@
     >
       <slot />
     </div>
-  </div>
+  </span>
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component'
+import { Component, Vue, Prop, Ref } from 'nuxt-property-decorator'
 import tippy, { Instance } from 'tippy.js'
 
-class Props {
-  title!: string
+@Component
+export default class Chip extends Vue {
+  @Prop(String) readonly title!: string
 
-  icon?: string
-}
+  @Prop(String) readonly icon: string | undefined
 
-export default class Chip extends Vue.with(Props) {
+  @Ref('chip') readonly chip!: HTMLDivElement
+
   tippy: Instance | null = null
 
   get details (): boolean {
@@ -35,12 +36,9 @@ export default class Chip extends Vue.with(Props) {
   }
 
   init () {
-    if (this.tippy) {
-      this.tippy.destroy()
-    }
+    this.uninit()
     if (this.details) {
-      const ele = this.$refs.chip as HTMLDivElement
-      this.tippy = tippy(ele, {
+      this.tippy = tippy(this.chip, {
         allowHTML: true,
         animation: 'shift-away',
         appendTo: document.body,
@@ -54,6 +52,12 @@ export default class Chip extends Vue.with(Props) {
     }
   }
 
+  uninit () {
+    if (this.tippy) {
+      this.tippy.destroy()
+    }
+  }
+
   updated () {
     this.init()
   }
@@ -62,15 +66,13 @@ export default class Chip extends Vue.with(Props) {
     this.init()
   }
 
-  beforeUnmount () {
-    if (this.tippy) {
-      this.tippy.destroy()
-    }
+  beforeDestroy () {
+    this.uninit()
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .chip {
     display: inline-block;
     margin: 0.25rem;

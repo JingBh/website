@@ -11,20 +11,17 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
 
 import UpAndDownArrow from './UpAndDownArrow.vue'
 
-class Props {
-  title!: string
-}
-
-@Options({
+@Component({
   components: {
     UpAndDownArrow
   }
 })
-export default class ContainerCard extends Vue.with(Props) {
+export default class ContainerCard extends Vue {
+  @Prop(String) readonly title!: string
 }
 </script>
 
