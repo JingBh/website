@@ -20,14 +20,14 @@
 
           <h6>
             <i class="bi-award" />
-            比较熟练的：
+            {{ $t('familiar-with') }}
           </h6>
 
           <chip
             title="JavaScript"
             icon="devicon-javascript-plain colored"
           >
-            <h6>比较熟悉的相关语言 / 运行时：</h6>
+            <h6>{{ $t('familiar-with-related-languages') }}</h6>
             <chip
               title="TypeScript"
               icon="devicon-typescript-plain colored"
@@ -46,7 +46,7 @@
             />
 
             <h6 class="my-2">
-              比较熟悉的相关框架：
+              {{ $t('familiar-with-related-frameworks') }}
             </h6>
             <chip
               title="Vue.js"
@@ -56,18 +56,18 @@
             <chip title="Express.js" />
 
             <p class="small text-muted mt-2 mb-0">
-              一开口就是老前端人了
+              {{ $t('meme-frontend') }}
             </p>
           </chip>
 
           <chip title="PHP">
-            <h6>比较熟悉的相关框架：</h6>
+            <h6>{{ $t('familiar-with-related-frameworks') }}</h6>
             <chip
               title="Laravel"
               icon="devicon-laravel-plain colored"
             />
             <h6 class="mt-2">
-              以前用过的相关框架：
+              {{ $t('used-once-frameworks') }}
             </h6>
             <chip title="ThinkPHP" />
           </chip>
@@ -76,36 +76,39 @@
             title="Python"
             icon="devicon-python-plain colored"
           >
-            <p>主要用来写一些小脚本，有时候也用来处理一些数据，没什么太了解的框架。</p>
+            <p>{{ $t('skills-python-intro') }}</p>
             <chip title="Anaconda" />
             <chip title="pandas" />
           </chip>
 
           <h6 class="mt-2">
             <i class="bi-patch-exclamation" />
-            不太熟练的：
+            {{ $t('not-familiar-with') }}
           </h6>
 
           <chip
             title="Java"
             icon="devicon-java-plain colored"
           >
-            <p>做久棋研究项目的时候临时学的，程度比较低。</p>
-            <h6>尝试使用的框架：</h6>
+            <p>{{ $t('skills-java-intro') }}</p>
+            <h6>{{ $t('tried-to-use-frameworks') }}</h6>
             <chip title="Spring Boot" />
             <p class="text-muted mt-2 mb-0">
-              然而并没太搞懂这东西怎么用...
+              {{ $t('tried-to-use-frameworks-intro') }}
             </p>
           </chip>
 
           <h6 class="my-2">
             <i class="bi-hand-thumbs-down" />
-            一窍不通的：
+            {{ $t('know-nothing') }}
           </h6>
 
           <chip :title="$t('what-could-it-be')">
-            <p class="text-danger fw-bold mb-0">
-              可恶，除了 C / C++ 还能是什么！
+            <p class="text-danger fw-bold">
+              {{ $t('what-could-it-be-intro') }}
+            </p>
+            <p class="small text-muted mt-2 mb-0">
+              <del>{{ $t('skills-assembly-intro') }}</del>
             </p>
           </chip>
         </div>
@@ -115,12 +118,12 @@
           </h4>
           <hr>
           <p class="small text-muted">
-            不管是前端人还是后端人，怎么能不会维护自己的网站服务器呢~
+            {{ $t('server-operation-intro') }}
           </p>
 
           <h6>
             <i class="bi-award" />
-            比较熟练的：
+            {{ $t('familiar-with') }}
           </h6>
           <chip
             title="Docker"
@@ -134,7 +137,7 @@
 
           <h6 class="mt-2">
             <i class="bi-patch-question" />
-            只能说用过的：
+            {{ $t('used-once') }}
           </h6>
           <chip
             title="PostgreSQL"
@@ -147,19 +150,20 @@
 
           <h6 class="mt-2">
             <i class="devicon-linux-plain" />
-            Linux 系统：
+            {{ $t('linux-os') }}
           </h6>
           <p>
-            使用
+            {{ $t('linux-os-intro-before') }}
             <chip
-              title="Debian 系"
+              :title="$t('linux-debian-family')"
               icon="devicon-debian-plain colored"
             />
-            比较熟练，自己服务器上常用的是
+            {{ $t('linux-os-intro-between') }}
             <chip
               title="Ubuntu Server"
               icon="devicon-ubuntu-plain colored"
             />
+            {{ $t('linux-os-intro-after') }}
           </p>
         </div>
       </div>
