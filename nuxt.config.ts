@@ -25,8 +25,7 @@ const config: NuxtConfig = {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'bootstrap-icons/font/bootstrap-icons.css',
-    'devicon/devicon.css',
-    'devicon/devicon-colors.css',
+    'devicon/devicon.min.css',
     'tippy.js/dist/tippy.css',
     'tippy.js/animations/shift-away.css',
     '~/assets/scss/app.scss'
@@ -55,9 +54,9 @@ const config: NuxtConfig = {
   // Internationalization module configuration (https://i18n.nuxtjs.org/options-reference)
   i18n: {
     locales: [
-      { code: 'zh', iso: 'zh-CN', file: 'zh.json' },
-      { code: 'en', iso: 'en', file: 'en.json' },
-      { code: 'xi', file: 'xi.json' } // Xiglish - a custom language
+      { code: 'zh', name: '🇨🇳 简体中文', iso: 'zh-CN', file: 'zh.json' },
+      { code: 'en', name: '🇺🇸 English', iso: 'en', file: 'en.json' },
+      { code: 'xi', name: '🇨🇳 Xiglish', file: 'xi.json' } // Xiglish - a custom language
     ],
     defaultLocale: 'zh',
     defaultDirection: 'ltr',
@@ -65,7 +64,7 @@ const config: NuxtConfig = {
     langDir: 'locales/',
     detectBrowserLanguage: {
       onlyOnNoPrefix: true,
-      crossOriginCookie: true
+      cookieCrossOrigin: true
     },
     vuex: false,
     vueI18n: {

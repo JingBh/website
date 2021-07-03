@@ -69,7 +69,7 @@ export default class FooterContainer extends Vue {
       arrow: false,
       content () {
         const img = document.createElement('img')
-        img.className = 'shadow-lg'
+        img.className = 'shadow-lg rounded'
         img.src = 'https://github-readme-stats.vercel.app/api/pin?username=JingBh&repo=website&show_owner=true'
         return img
       },

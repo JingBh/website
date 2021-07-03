@@ -1,17 +1,8 @@
 <template>
-  <span
-    ref="chip"
-    class="chip shadow-sm"
-  >
-    <i
-      v-if="icon"
-      :class="icon"
-    />
+  <span ref="chip" class="chip shadow-sm">
+    <i v-if="icon" :class="icon" />
     {{ title }}
-    <div
-      v-if="details"
-      class="chip-details"
-    >
+    <div v-if="details" class="chip-details">
       <slot />
     </div>
   </span>
@@ -27,7 +18,7 @@ export default class Chip extends Vue {
 
   @Prop(String) readonly icon: string | undefined
 
-  @Ref('chip') readonly chip!: HTMLDivElement
+  @Ref('chip') readonly chip!: HTMLSpanElement
 
   tippy: Instance | null = null
 
@@ -77,6 +68,7 @@ export default class Chip extends Vue {
     display: inline-block;
     margin: 0.25rem;
     padding: 0.5rem 1rem;
+    color: var(--bs-dark);
     background: rgba(100, 100, 100, 0.15);
     border: var(--bs-secondary);
     font-size: 1rem;
