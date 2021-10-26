@@ -33,11 +33,11 @@
 
             <chip title="Vue.js" icon="devicon-vuejs-plain colored" />
 
-            <chip title="Nuxt.js" />
+            <chip title="Nuxt.js" icon="devicon-nuxtjs-plain colored" />
 
             <chip title="Express.js" icon="devicon-express-original colored" />
 
-            <chip title="Socket.io" />
+            <chip title="Socket.io" icon="devicon-socketio-original colored" />
 
             <h6 class="my-2" v-text="$t('familiar-with-styles-or-components')" />
 
@@ -65,7 +65,7 @@
 
             <chip title="Anaconda" />
 
-            <chip title="pandas" />
+            <chip title="pandas" icon="devicon-pandas-original colored" />
           </chip>
 
           <h6 class="mt-2">
@@ -74,16 +74,18 @@
           </h6>
 
           <chip title="Java" icon="devicon-java-plain colored">
-            <p v-text="$t('skills-java-intro')" />
+            <h6 class="mt-2" v-text="$t('familiar-with-related-languages')" />
 
-            <h6 v-text="$t('tried-to-use-frameworks')" />
+            <chip title="Kotlin" icon="devicon-kotlin-plain colored" />
+
+            <chip title="Android" icon="devicon-android-plain colored" />
+
+            <h6 class="mt-2" v-text="$t('tried-to-use-frameworks')" />
 
             <chip title="Spring Boot" icon="devicon-spring-plain colored" />
 
             <p class="text-muted mt-2 mb-0" v-text="$t('tried-to-use-frameworks-intro')" />
           </chip>
-
-          <chip title="Golang" icon="devicon-go-plain" />
 
           <h6 class="my-2">
             <i class="bi-hand-thumbs-down" />
